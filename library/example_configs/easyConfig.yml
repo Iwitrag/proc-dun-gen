@@ -1,0 +1,39 @@
+roomShapes:
+- name: "small_rect"
+  template:
+    name: "rectangle"
+    params:
+      size-x: "5-10"
+      size-y: "4-8"
+  shape: null
+- name: "heart"
+  template: null
+  shape:
+  - "..x...x.."
+  - ".xxx.xxx."
+  - "xxxxxxxxx"
+  - ".xxxxxxx."
+  - "..xxxxx.."
+  - "...xxx..."
+  - "....x...."
+- name: "big_square"
+  template:
+    name: "square"
+    params:
+      size: "20-25"
+  shape: null
+rooms:
+- name: "basic"
+  shape: "small_rect"
+  amount: "10-20"
+  rotate: "false"
+- name: "heart"
+  shape: "heart"
+  amount: "5-10"
+  rotate: "true"
+- name: "boss"
+  shape: "big_square"
+  amount: "0-3"
+  rotate: "false"
+outputFileType: "YAML"
+seed: null

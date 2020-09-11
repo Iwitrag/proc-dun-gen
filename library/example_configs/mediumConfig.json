@@ -1,0 +1,116 @@
+{
+  "roomShapes" : [
+    {
+      "name" : "small_rect",
+      "template" : {
+        "name" : "rectangle",
+        "params" : {
+          "size-x" : "5-10",
+          "size-y" : "4-8"
+        }
+      },
+      "shape" : null
+    },
+    {
+      "name" : "small_sq",
+      "template" : {
+        "name" : "square",
+        "params" : {
+          "size" : "5-10"
+        }
+      },
+      "shape" : null
+    },
+    {
+      "name" : "heart",
+      "template" : null,
+      "shape" : [
+        "..x...x..",
+        ".xxx.xxx.",
+        "xxxxxxxxx",
+        ".xxxxxxx.",
+        "..xxxxx..",
+        "...xxx...",
+        "....x...."
+      ]
+    },
+    {
+      "name" : "diamond",
+      "template" : null,
+      "shape" : [
+        ".....x.....",
+        "....xxx....",
+        "...xxxxx...",
+        "..xxxxxxx..",
+        ".xxxxxxxxx.",
+        "xxxxxxxxxxx",
+        ".xxxxxxxxx.",
+        "..xxxxxxx..",
+        "...xxxxx...",
+        "....xxx....",
+        ".....x....."
+      ]
+    },
+    {
+      "name" : "big_square",
+      "template" : {
+        "name" : "square",
+        "params" : {
+          "size" : "20-25"
+        }
+      },
+      "shape" : null
+    },
+    {
+      "name" : "mega room",
+      "template" : {
+        "name" : "rectangle",
+        "params" : {
+          "size-x" : "50-75",
+          "size-y" : "50-75"
+        }
+      },
+      "shape" : null
+    }
+  ],
+  "rooms" : [
+    {
+      "name" : "basic",
+      "shape" : "small_rect",
+      "amount" : "50-100",
+      "rotate" : "false"
+    },
+    {
+      "name" : "basic2",
+      "shape" : "small_sq",
+      "amount" : "50-100",
+      "rotate" : "false"
+    },
+    {
+      "name" : "heart",
+      "shape" : "heart",
+      "amount" : "20-40",
+      "rotate" : "true"
+    },
+    {
+      "name" : "diamond",
+      "shape" : "diamond",
+      "amount" : "10-20",
+      "rotate" : "true"
+    },
+    {
+      "name" : "boss",
+      "shape" : "big_square",
+      "amount" : "1-5",
+      "rotate" : "false"
+    },
+    {
+      "name" : "mega",
+      "shape" : "mega room",
+      "amount" : "1-1",
+      "rotate" : "false"
+    }
+  ],
+  "outputFileType" : "JSON",
+  "seed" : null
+}
